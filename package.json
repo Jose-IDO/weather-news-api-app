@@ -1,0 +1,36 @@
+{
+  "name": "async-weather-news-dashboard",
+  "version": "1.0.0",
+  "description": "Async Weather & News Dashboard demonstrating callbacks, promises, and async/await",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "callback": "npm run build && node dist/callbackVersion.js",
+    "promise": "npm run build && node dist/promiseVersion.js",
+    "async": "npm run build && node dist/asyncAwaitVersion.js",
+    "dev": "ts-node src/index.ts",
+    "dev:callback": "ts-node src/callbackVersion.ts",
+    "dev:promise": "ts-node src/promiseVersion.ts",
+    "dev:async": "ts-node src/asyncAwaitVersion.ts"
+  },
+  "keywords": [
+    "weather",
+    "news",
+    "async",
+    "typescript",
+    "callbacks",
+    "promises"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.6.13",
+    "node-fetch": "^2.7.0"
+  }
+}
